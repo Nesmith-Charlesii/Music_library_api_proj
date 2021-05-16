@@ -27,9 +27,32 @@
 		{
 			"name": "Create_Song",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"title\": \"95.south\",\r\n   \"artist\": \"J.Cole\",\r\n   \"album\":  \"The Off-Season\",\r\n   \"release_date\":\"2021-05-14T13:00:05Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -65,7 +88,7 @@
 		{
 			"name": "Delete_Song",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
 				"url": null
 			},
@@ -76,7 +99,17 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:8000/music/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						""
+					]
+				}
 			},
 			"response": []
 		}
